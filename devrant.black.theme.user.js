@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Devrant Black Theme
 // @namespace    http://devrant.com/
-// @version      0.1
+// @version      0.2
 // @description  Add the black devrant++ member theme
 // @author       7twin
 // @match        *devrant.com/*
@@ -43,11 +43,11 @@
             background: rgba(255,255,255,0.6) !important;
         }
 
-        textarea:focus, input:focus {
+        textarea:focus, input:focus{
             outline: none;
         }
 
-        .rantlist-tags a:hover {
+        .rantlist-tags a:hover{
             color: white !important;
             border-color: white !important;
         }
@@ -61,17 +61,21 @@
         .modal-x:hover,
         .post-rant-bottom,
         .signup-details-btn.btn.modal-btn.btn-post-rant:hover,
-        .banner-btn:hover {
+        .banner-btn:hover,
+        .signup-details-btn.btn.modal-btn.btn-post-comment:hover,
+        .addcomment-btn:hover,
+        .twitter-share:hover,
+        .fb-share-button:hover {
             color: black !important;
             background-color:white !important;
             border-color: white !important;
         }
 
-        .modal-overlay {
+        .modal-overlay{
             background-color: rgba(0,0,0,0.7) !important;
         }
 
-        .addrant-btn:hover {
+        .addrant-btn:hover{
             background-color: rgba(255,255,255,0.8) !important;
         }
 
@@ -101,7 +105,7 @@
             color:rgba(255,255,255,0.6) !important;
         }
 
-        div.rant-avatar-scroll > img {
+        div.rant-avatar-scroll > img{
             width: 90%;
             border-radius: 1000%;
         }
