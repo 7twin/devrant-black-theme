@@ -2,7 +2,7 @@
 // @name         Devrant Black Theme
 // @namespace    http://devrant.com/
 // @version      0.2
-// @description  Add the black devrant++ member theme
+// @description  Add the black devrant++ member theme to web-devrant, with optional full no color theme
 // @author       7twin
 // @match        *devrant.com/*
 // @match        *devrant.io/*
@@ -13,8 +13,9 @@
 (function() {
     'use strict';
 
-    var grayscale_images = false;
-
+    // start - settings
+        var grayscale_images = false;
+    // end
 
     var style = `
         :root {
