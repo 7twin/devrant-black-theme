@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Devrant Black Theme
 // @namespace    http://devrant.com/
-// @version      0.2
+// @version      0.3
 // @description  Add the black devrant++ member theme to web-devrant, with optional full no color theme
 // @author       7twin
 // @match        *devrant.com/*
@@ -17,12 +17,26 @@
         var grayscale_images = false;
     // end
 
+    function check_theme_cookie(){
+        var current_theme = Cookies.get("dr_theme");
+        var params = {
+            secure: true,
+            expires: 365
+        };
+
+        if (current_theme !== 2) {
+            Cookies.set("dr_theme", "2", params);
+            location.reload(true);
+        }
+    }
+
     var style = `
         :root {
             --colorDarkBlue: black !important;
             --colorDarkerBlue: black !important;
             --colorMidBlue: gray !important;
             --colorNewsText: gray !important;
+            --colorBg: black !important;
         }
 
         .rant-avatar-scroll {
@@ -130,4 +144,5 @@
     }
 
     GM_addStyle(style);
+    check_theme_cookie();
 })();
