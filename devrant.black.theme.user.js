@@ -124,6 +124,14 @@
             width: 90%;
             border-radius: 1000%;
         }
+
+        .notif-new > .notif-link > .notif-body > .notif-body-text {
+            color: #fff;
+        }
+
+        .rant-attached {
+            color: #000;
+        }
     `;
 
     if(grayscale_images !== false){
