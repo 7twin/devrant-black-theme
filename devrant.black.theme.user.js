@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Devrant Black Theme
 // @namespace    http://devrant.com/
-// @version      0.3
+// @version      0.4
 // @description  Add the black devrant++ member theme to web-devrant, with optional full no color theme
 // @author       7twin
 // @match        *devrant.com/*
