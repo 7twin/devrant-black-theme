@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Devrant Black Theme
 // @namespace    http://devrant.com/
-// @version      0.4
+// @version      0.5
 // @description  Add the black devrant++ member theme to web-devrant, with optional full no color theme
 // @author       7twin
 // @match        *devrant.com/*
@@ -75,6 +75,7 @@
         .addrant-btn,
         .modal-x:hover,
         .post-rant-bottom,
+        .rant-attached,
         .signup-details-btn.btn.modal-btn.btn-post-rant:hover,
         .banner-btn:hover,
         .signup-details-btn.btn.modal-btn.btn-post-comment:hover,
@@ -127,10 +128,6 @@
 
         .notif-new > .notif-link > .notif-body > .notif-body-text {
             color: #fff;
-        }
-
-        .rant-attached {
-            color: #000;
         }
     `;
 
