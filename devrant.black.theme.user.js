@@ -147,6 +147,18 @@
                 -webkit-filter: grayscale(100%);
                 filter: grayscale(100%);
             }
+
+            .notif-avatar > img,
+            .icon-container {
+                -webkit-filter: brightness(0.4);
+                filter: brightness(0.4);
+            }
+
+            .notif-new > .notif-avatar-link > .notif-avatar > img,
+            .notif-new > .icon-container {
+                -webkit-filter: brightness(1);
+                filter: brightness(1);
+            }
        `;
     }
 
