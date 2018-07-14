@@ -149,15 +149,15 @@
             }
 
             .notif-avatar > img,
-            .icon-container {
-                -webkit-filter: brightness(0.4);
-                filter: brightness(0.4);
+            .notif-avatar-link > .icon-container {
+                -webkit-filter: grayscale(100%) brightness(0.4);
+                filter: grayscale(100%) brightness(0.4);
             }
 
             .notif-new > .notif-avatar-link > .notif-avatar > img,
-            .notif-new > .icon-container {
-                -webkit-filter: brightness(1);
-                filter: brightness(1);
+            .notif-new > .notif-avatar-link > .icon-container {
+                -webkit-filter: grayscale(100%) brightness(1);
+                filter: grayscale(100%) brightness(1);
             }
        `;
     }
