@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Devrant Black Theme
 // @namespace    http://devrant.com/
-// @version      0.6
+// @version      0.7
 // @description  Add the black devrant++ member theme to web-devrant, with optional full no color theme
 // @author       7twin
 // @match        *devrant.com/*
@@ -17,16 +17,34 @@
         var grayscale_images = false;
     // end
 
-    function check_theme_cookie(){
-        var current_theme = Cookies.get("dr_theme");
-        var params = {
-            secure: true,
-            expires: 365
-        };
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i <ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
 
-        if (current_theme !== 2) {
-            Cookies.set("dr_theme", "2", params);
-            location.reload(true);
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        var expires = "expires="+ d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/;secure";
+    }
+
+    function check_theme_cookie(){
+        var current_theme = getCookie("dr_theme");
+        if (current_theme != 2) {
+            setCookie("dr_theme", "2", 365);
+            location.reload();
         }
     }
 
