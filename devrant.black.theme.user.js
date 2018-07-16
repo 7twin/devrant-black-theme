@@ -166,13 +166,13 @@
                 filter: grayscale(100%);
             }
 
-            .notif-avatar > img,
+            .notif-avatar,
             .notif-avatar-link > .icon-container {
                 -webkit-filter: grayscale(100%) brightness(0.4);
                 filter: grayscale(100%) brightness(0.4);
             }
 
-            .notif-new > .notif-avatar-link > .notif-avatar > img,
+            .notif-new > .notif-avatar-link > .notif-avatar,
             .notif-new > .notif-avatar-link > .icon-container {
                 -webkit-filter: grayscale(100%) brightness(1);
                 filter: grayscale(100%) brightness(1);
