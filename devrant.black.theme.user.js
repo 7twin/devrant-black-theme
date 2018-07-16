@@ -186,18 +186,17 @@
             /* Vote style */
             .body-col2 .rantlist-vote-col.vote-state-unvoted > .plusone,
             .body-col2 .rantlist-vote-col.vote-state-unvoted > .minusone,
-            .body-col2 .rantlist-vote-col.vote-state-upvoted > .plusone,
-            .body-col2 .rantlist-vote-col.vote-state-upvoted > .minusone {
+            .body-col2 .rantlist-vote-col.vote-state-upvoted > .minusone,
+            .body-col2 .rantlist-vote-col.vote-state-downvoted > .plusone {
                 color: #666666 !important;
                 background-color: transparent !important;
                 border: 2px solid #666666 !important;
                 transition: 0.2s ease-in-out;
             }
 
-
             .body-col2 .rantlist li .rantlist-vote-col.vote-state-unvoted .plusone.btn-vote-circle:hover,
-            .body-col2 .rantlist-vote-col.vote-state-unvoted > .plusone:hover,
-            .body-col2 .rantlist-vote-col.vote-state-upvoted > .plusone {
+            .body-col2 .rantlist-vote-col.vote-state-upvoted > .plusone,
+            .body-col2 .rantlist-vote-col.vote-state-downvoted > .plusone:hover {
                 background-color: transparent !important;
                 color: #007ACC !important;
                 border: 2px solid var(--colorSlim) !important;
@@ -205,7 +204,7 @@
 
             .body-col2 .rantlist li .rantlist-vote-col.vote-state-unvoted .minusone.btn-vote-circle:hover,
             .body-col2 .rantlist-vote-col.vote-state-upvoted > .minusone:hover,
-            .body-col2 .rantlist-vote-col.vote-state-unvoted > .minusone:hover {
+            .body-col2 .rantlist-vote-col.vote-state-downvoted > .minusone {
                 background-color: transparent !important;
                 color: #D55161 !important;
                 border: 2px solid #D55161 !important;
