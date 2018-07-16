@@ -15,7 +15,7 @@
 
     // start - settings
         var grayscale_images = false;
-        var slim_style = false;
+        var slim_style = true;
     // end
 
     function getCookie(cname) {
@@ -188,6 +188,8 @@
             .body-col2 .rantlist-vote-col.vote-state-unvoted > .plusone,
             .body-col2 .rantlist-vote-col.vote-state-unvoted > .minusone,
             .body-col2 .rantlist-vote-col.vote-state-upvoted > .minusone,
+            .body-col2 .rantlist-vote-col.vote-state-novote > .plusone,
+            .body-col2 .rantlist-vote-col.vote-state-novote > .minusone,
             .body-col2 .rantlist-vote-col.vote-state-downvoted > .plusone {
                 color: #666666 !important;
                 background-color: transparent !important;
