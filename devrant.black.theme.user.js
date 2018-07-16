@@ -15,7 +15,7 @@
 
     // start - settings
         var grayscale_images = false;
-        var slim_style = true;
+        var slim_style = false;
     // end
 
     function getCookie(cname) {
