@@ -15,6 +15,7 @@
 
     // start - settings
         var grayscale_images = false;
+        var slim_style = false;
     // end
 
     function getCookie(cname) {
@@ -55,6 +56,7 @@
             --colorMidBlue: gray !important;
             --colorNewsText: gray !important;
             --colorBg: black !important;
+            --colorSlim: #007ACC !important;
         }
 
         .rant-avatar-scroll {
@@ -164,7 +166,7 @@
             img, .notif-avatar {
                 -webkit-filter: grayscale(100%);
                 filter: grayscale(100%);
-            }
+	        }
 
             .notif-avatar,
             .notif-avatar-link > .icon-container {
@@ -178,6 +180,79 @@
                 filter: grayscale(100%) brightness(1);
             }
        `;
+    } else if (slim_style !== false) {
+        style = style + `
+
+            /* Vote style */
+            .body-col2 .rantlist-vote-col.vote-state-unvoted > .plusone,
+            .body-col2 .rantlist-vote-col.vote-state-unvoted > .minusone,
+            .body-col2 .rantlist-vote-col.vote-state-upvoted > .plusone,
+            .body-col2 .rantlist-vote-col.vote-state-upvoted > .minusone {
+                color: #666666 !important;
+                background-color: transparent !important;
+                border: 2px solid #666666 !important;
+                transition: 0.2s ease-in-out;
+            }
+
+
+            .body-col2 .rantlist li .rantlist-vote-col.vote-state-unvoted .plusone.btn-vote-circle:hover,
+            .body-col2 .rantlist-vote-col.vote-state-unvoted > .plusone:hover,
+            .body-col2 .rantlist-vote-col.vote-state-upvoted > .plusone {
+                background-color: transparent !important;
+                color: #007ACC !important;
+                border: 2px solid var(--colorSlim) !important;
+            }
+
+            .body-col2 .rantlist li .rantlist-vote-col.vote-state-unvoted .minusone.btn-vote-circle:hover,
+            .body-col2 .rantlist-vote-col.vote-state-upvoted > .minusone:hover,
+            .body-col2 .rantlist-vote-col.vote-state-unvoted > .minusone:hover {
+                background-color: transparent !important;
+                color: #D55161 !important;
+                border: 2px solid #D55161 !important;
+            }
+            /* Vote style */
+
+            /* Tag lists colour */
+            .rantlist-tags > a[href="/search?term=rant"] {
+                color: #D55161;
+                border: 1px solid #D55161 !important;
+            }
+
+            .rantlist-tags > a[href="/search?term=joke%2Fmeme"] {
+                color: #2A8B9D;
+                border: 1px solid #2A8B9D !important;
+            }
+
+            .rantlist-tags > a[href="/search?term=question"] {
+                color: #A973A2;
+                border: 1px solid #A973A2 !important;
+            }
+
+            .rantlist-tags > a[href="/search?term=devrant"] {
+                color: #F99A66;
+                border: 1px solid #F99A66 !important;
+            }
+
+            .rantlist-tags > a[href="/search?term=random"] {
+                color: #7BC8A4;
+                border: 1px solid #7BC8A4 !important;
+            }
+            /* Tag lists colour */
+
+            /* Notif style */
+            .notif-avatar,
+            .notif-avatar-link > .icon-container {
+                -webkit-filter: brightness(0.5);
+                filter: brightness(0.5);
+            }
+
+            .notif-new > .notif-avatar-link > .notif-avatar,
+            .notif-new > .notif-avatar-link > .icon-container {
+                -webkit-filter: brightness(1);
+                filter: brightness(1);
+            }
+            /* Notif style */
+        `;
     }
 
     GM_addStyle(style);
