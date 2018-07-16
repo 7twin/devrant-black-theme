@@ -89,6 +89,7 @@
 
         .body-col2 .rantlist li .rantlist-vote-col.vote-state-unvoted .btn-vote-circle:hover,
         .body-col2 .rantlist-vote-col.vote-state-upvoted .plusone,
+        .body-col2 .rantlist-vote-col.vote-state-downvoted .minusone,
         .menu-notif.notif-badge,
         .menu-notif.notif-badge.notif-2digits,
         .vote-state-upvoted > .vote-scroll > .plusone.btn-vote-circle:nth-child(1),
