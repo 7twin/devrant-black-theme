@@ -8,3 +8,4 @@ A good pull request includes:
 - screenshots and description of the changes proposed
 - if available a link to an opened issue
 - only one fix or feature: each issue and feature should have their own PR
+- a name tag addressing the person, most likely me: "@7twin"
