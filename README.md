@@ -8,6 +8,8 @@ Add the black devrant++ member theme to web-devrant, with optional full no color
 * [Screenshots](#screenshots)
 * [Grayscale Mode](#grayscale-mode)
 * [Download](#download)
+  * [Tampermonkey](#tampermonkey)
+  * [Stylus](#stylus)
 
 # Screenshots
 
@@ -36,6 +38,7 @@ Add the black devrant++ member theme to web-devrant, with optional full no color
 To activate the full no color mode, set the setting to true and save the script: https://github.com/7twin/devrant-black-theme/blob/841a16d62faa3b6461cd130b0f27f771075e9ba9/devrant.black.theme.user.js#L17
 
 # Download
+## Tampermonkey
 Download tampermonkey:
 
 * **Chrome:** https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo
@@ -44,3 +47,12 @@ Download tampermonkey:
 * **Other:** https://tampermonkey.net/ (follow instructions there)
 
 Then install the user-script here: https://github.com/7twin/devrant-black-theme/raw/master/devrant.black.theme.user.js
+
+## Stylus
+Download stylus:
+
+* **Chrome:** https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne
+* **Firefox:** https://addons.mozilla.org/firefox/addon/styl-us/
+* **Opera:** https://addons.opera.com/extensions/details/stylus/
+
+Then install the user-style here: https://github.com/7twin/devrant-black-theme/raw/master/devrant.black.theme.user.dark.css
