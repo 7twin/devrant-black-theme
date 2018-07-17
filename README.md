@@ -6,8 +6,9 @@ Add the black devrant++ member theme to web-devrant, with optional full no color
 # TOC
 
 * [Screenshots](#screenshots)
-* [Grayscale Mode](#grayscale-mode)
-* [Slim Theme](#slim-theme)
+* Different modes
+  * [Grayscale Mode](#grayscale-mode)
+  * [Slim Theme](#slim-theme)
 * [Download](#download)
   * [Tampermonkey](#tampermonkey)
   * [Stylus](#stylus)
