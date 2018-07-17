@@ -6,7 +6,7 @@ Add the black devrant++ member theme to web-devrant, with optional full no color
 # TOC
 
 * [Screenshots](#screenshots)
-* Different modes
+* [Modes](#modes)
   * [Grayscale Mode](#grayscale-mode)
   * [Slim Theme](#slim-theme)
 * [Download](#download)
@@ -30,22 +30,25 @@ Add the black devrant++ member theme to web-devrant, with optional full no color
     <td><a href="https://user-images.githubusercontent.com/32747235/42661895-e9406968-862f-11e8-817b-4d989fab9558.png"><img src="https://user-images.githubusercontent.com/32747235/42661895-e9406968-862f-11e8-817b-4d989fab9558.png" width="100%" ></a></td>
     <td><a href="https://user-images.githubusercontent.com/32747235/42661891-e8cbb028-862f-11e8-8238-5720ad7240d7.png"><img src="https://user-images.githubusercontent.com/32747235/42661891-e8cbb028-862f-11e8-8238-5720ad7240d7.png" width="100%" ></a></td>
   </tr>
-  <tr>
-    <td><a href="https://user-images.githubusercontent.com/32747235/42661893-e9079c50-862f-11e8-831e-1b56a5629354.png"><img src="https://user-images.githubusercontent.com/32747235/42661893-e9079c50-862f-11e8-831e-1b56a5629354.png" width="100%" ></a></td>
-   <td><a href="https://user-images.githubusercontent.com/38621036/42744816-51b779d4-88f9-11e8-80be-a2f8898d1f81.PNG"><img src="https://user-images.githubusercontent.com/38621036/42744816-51b779d4-88f9-11e8-80be-a2f8898d1f81.PNG" width="100%"></a></td>
-  </tr>
-  </tr>
 </table>
 
-# Grayscale Mode
+# Modes
+
+## Grayscale Mode
+
+### Preview
+<img src="https://user-images.githubusercontent.com/32747235/42661893-e9079c50-862f-11e8-831e-1b56a5629354.png" width="50%" ></a>
+
+### Instructions
 
 To activate the full no color mode, set the setting to true and save the script: https://github.com/7twin/devrant-black-theme/blob/841a16d62faa3b6461cd130b0f27f771075e9ba9/devrant.black.theme.user.js#L17
 
-# Slim Theme
+## Slim Theme
 
-## Preview
+### Preview
 <img src="https://user-images.githubusercontent.com/38621036/42744816-51b779d4-88f9-11e8-80be-a2f8898d1f81.PNG" width="50%">
 
+## Instructions
 To activate the slim theme, set the setting to true and save the script: https://github.com/7twin/devrant-black-theme/blob/407c4d04859acba7431db2f8576a72bc27887e1f/devrant.black.theme.user.js#L18
 
 # Download
